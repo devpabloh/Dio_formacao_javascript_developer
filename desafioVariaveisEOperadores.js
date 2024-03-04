@@ -5,6 +5,6 @@ let distanciaEmKm = 100;
 
 let gastoComViagem = (distanciaEmKm / KmPorLitro) * valorCombustivel;
 
- console.log(gastoComViagem);
+ console.log(gastoComViagem.toFixed(2));
 
 
