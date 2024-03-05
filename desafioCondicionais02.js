@@ -10,13 +10,13 @@
 function notas (n1, n2, n3){
     let media = (n1 + n2 + n3) / 3
     if(media < 5){
-        console.log("você foi reprovado")
+        return ("você foi reprovado")
     
     } else if(media === 6){
-        console.log("você está na recuperação")
+        return ("você está na recuperação")
     
     } else {
-        console.log("Você foi aprovado")
+        return ("Você foi aprovado")
     }
 }
 console.log(notas(6,6,6))
