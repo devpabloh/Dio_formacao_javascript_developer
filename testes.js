@@ -1,5 +1,11 @@
-function calcularMedia(nota1, nota2) {
-    const media = (nota1 + nota2) / 2;
-}
+const objeto = {
+    nome: 'Pablo Henrique',
+    idade: 30,
+    descrever: function(){
 
-console.log(calcularMedia(5, 5));
+        nome = 'Gabriel'
+        console.log(`Meu nome usando a forma literal é ${nome} meu nome usando o this é ${this.nome}`)
+    }
+
+}
+objeto.descrever()
