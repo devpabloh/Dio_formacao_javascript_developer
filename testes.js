@@ -17,4 +17,4 @@ class Pessoa1{
     }
 }
 
-const gabriel = new Pessoa1("Gabriel Henrique",25)2
+const gabriel = new Pessoa1("Gabriel Henrique",25)
