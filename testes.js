@@ -1,20 +1,16 @@
 class Pessoa {
-    constructor(nome, idade){
-        this.nome = nome;
-        this.idade = idade;
-    }
-    descrever(){
-        console.log(`meu nome é ${this.nome} minha idade é ${this.idade}`)
-    }
-}
-const pablo = new Pessoa('Pablo Henrique', 30)
-pablo.descrever()
+    nome;
+    idade;
 
-class Pessoa1{
-    constructor(nome, idade){
+    constructor(nome, idade) {
         this.nome = nome;
         this.idade = idade;
     }
 }
 
-const gabriel = new Pessoa1("Gabriel Henrique",25)
+function descreverPessoa(pessoa) {
+    console.log(`Nome: ${pessoa.nome}; Idade: ${pessoa.idade};`);
+}
+
+const renan = new Pessoa('Renan', 30);
+console.log(descreverPessoa(renan));
