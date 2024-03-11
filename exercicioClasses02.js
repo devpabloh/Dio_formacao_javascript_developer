@@ -14,11 +14,30 @@ class Pessoas {
         this.peso = peso;
         this.altura = altura;
     }
-    meuIMC(){
-        return (`Eu sou ${this.nome} tenho ${this.peso /(this.altura * this.altura)} de IMC.`);
+    calcularIMC(){
+        return this.peso /(this.altura * this.altura);
     }
+
+    classificarIMC(){
+        const imc = this.calcularIMC()
+
+        if(imc < 17 && imc < 18.4){
+            return `Abaixo do peso`
+        }else if(imc >= 18.5 && imc < 24.9){
+            return `Peso normal`
+        }else if(imc >= 25 && imc < 29.9){
+            return 'Sobrepeso'
+        }else if(imc >= 30 && imc < 30.9){
+            return `Obesidade`
+        }else{
+            return `Obesidade Grave`
+        }
+    
+    }
+
 }
+
 // Aqui estamos usando o new para criar uma instância para a nossa classe Pessoas
-const pessoa1 = new Pessoas('José', 70, 1.75);
+const pessoa1 = new Pessoas('José', 100, 1.75);
 // aqui estamos usando o console.log para puder imprimir o que queremos no console
-console.log(pessoa1.meuIMC());
+console.log(pessoa1.classificarIMC());
