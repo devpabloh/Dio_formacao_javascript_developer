@@ -1,3 +1,8 @@
 const alunos = ['João', 'Vitor', 'Mariana']
 
-console.log(alunos[2])
+//primeira forma de adcionar algo a um array
+alunos.push('Renan');
+//segunda forma de adicionar algo a um array
+alunos[4] = 'Pablo'
+
+console.log(alunos)
