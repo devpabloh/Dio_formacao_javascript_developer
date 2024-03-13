@@ -19,4 +19,8 @@ notas.push(5);
 
 const soma = notas[0] + notas[1] + notas[2] + notas[3] + notas[4];
 
+for(let i = 0; i < notas.length; i++){
+    
+}
+
 console.log(soma / notas.length);
