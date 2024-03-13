@@ -25,8 +25,8 @@ for(let i = 0; i < notas.length; i++){
 
 console.log(soma / notas.length); */
 
-const nome = 'vitor johansen guerra'
+const nome = 'vitor johansen guerra';
 
 for(let i = 0; i < nome.length; i++){
-    console.log(nome[i])
+    console.log(nome[i]);
 }
