@@ -9,15 +9,25 @@ alunos.pop();
 
 /* console.log(alunos) */
 
-/* const notas = [];
+const notas = [];
 
 notas.push(5);
 notas.push(7);
 notas.push(8);
-notas.push(2);
-notas.push(5);
 
-const soma = notas[0] + notas[1] + notas[2] + notas[3] + notas[4];
+
+let soma = 0
+
+for(i = 0; i < notas.length; i++){
+
+    const nota = notas[i]
+    soma = soma + nota
+}
+
+const media = soma / notas.length;
+console.log(media)
+
+/* const soma = notas[0] + notas[1] + notas[2] + notas[3] + notas[4];
 
 for(let i = 0; i < notas.length; i++){
 
@@ -25,8 +35,8 @@ for(let i = 0; i < notas.length; i++){
 
 console.log(soma / notas.length); */
 
-const nome = 'vitor johansen guerra';
+/* const nome = 'vitor johansen guerra';
 
 for(let i = 0; i < nome.length; i++){
     console.log(nome[i]);
-}
+} */
