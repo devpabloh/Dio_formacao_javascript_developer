@@ -1,0 +1,1 @@
+const funcoes = require('../06-importação')
