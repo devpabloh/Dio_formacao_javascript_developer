@@ -1,4 +1,4 @@
-class Pessoa {
+/* class Pessoa {
     nome;
     idade;
 
@@ -13,4 +13,22 @@ function descreverPessoa(pessoa) {
 }
 
 const renan = new Pessoa('Renan', 30);
-console.log(descreverPessoa(renan));
+console.log(descreverPessoa(renan));  */
+
+var primeira = 10
+let segunda = 20
+const terceira = 30
+
+let arrays = []
+
+const objetos = {}
+
+for(){
+
+}
+
+if(){
+
+}else if(){
+
+}else{}
