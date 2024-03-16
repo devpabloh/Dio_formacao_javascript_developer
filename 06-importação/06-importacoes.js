@@ -1,7 +1,7 @@
 // Funções Auxiliares
 
 
-const entradas = [5,50,10,98,23];
+const entradas = [5.5];
 
 let i = 0;
 
