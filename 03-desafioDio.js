@@ -17,8 +17,16 @@ function calcularPorcentagem (valor, percentual){
     return valor * (percentual / 100)
 }
 
-print(calcularPorcentagem(salarioBruto,10))
 
-function percentualComBaseNoSalario(salarioBruto, percentual){
 
+function percentualComBaseNoSalario(salarioBruto){
+    if( salarioBruto >= 0 && salarioBruto <= 1100){
+        return 5
+    } else if(salarioBruto >= 1100.01 && salarioBruto <= 2500){
+        return 10
+    }else {
+        return 15
+    }
 }
+
+print(percentualComBaseNoSalario(salarioBruto))
