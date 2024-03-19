@@ -7,17 +7,19 @@ const {gets, print} = require('../Dio_formacao_javascript_developer/06-importaç
 
 let numerosRecebidos = gets()
 
-let maiorNumeroPar = 0
-let menorNumeroImpar = 0
+let maiorNumeroPar = null
+let menorNumeroImpar = null
 for(let i=0; i < numerosRecebidos; i++ ){
     const numero = gets()
     if(numero % 2 === 0){
-        if(numero > maiorNumeroPar){
+        if(maiorNumeroPar === null){
+            maiorNumeroPar = numero;
+        } else if(numero > maiorNumeroPar){
             maiorNumeroPar = numero;
         }
 
     }else{
-        if(menorNumeroImpar === 0){
+        if(menorNumeroImpar === null){
             menorNumeroImpar = numero;
 
         }else if(numero < menorNumeroImpar){
