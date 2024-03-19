@@ -7,6 +7,18 @@ De R$ 2500.01 para cima = 15.00%
 
 const {gets, print} = require("../Dio_formacao_javascript_developer/06-importação/06-importacoes")
 
-let numero = gets()
+let salarioBruto = gets()
+const ValorAdicionalDoBeneficio = gets()
 
-print(numero)
+
+
+
+function calcularPorcentagem (valor, percentual){
+    return valor * (percentual / 100)
+}
+
+print(calcularPorcentagem(salarioBruto,10))
+
+function percentualComBaseNoSalario(salarioBruto, percentual){
+
+}
