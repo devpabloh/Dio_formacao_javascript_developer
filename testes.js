@@ -28,7 +28,7 @@ function percentual(salarioBruto){
         return 15
     }
 }
-
+print (salarioBruto)
 print (percentual())
 
 
