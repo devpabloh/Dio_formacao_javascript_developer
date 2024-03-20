@@ -7,7 +7,7 @@ De R$ 2500.01 para cima = 15.00%
 
 const {gets, print} = require("../Dio_formacao_javascript_developer/06-importação/06-importacoes")
 
-let salarioBruto = gets()
+let salario = gets()
 const ValorAdicionalDoBeneficio = gets()
 
 
@@ -19,16 +19,18 @@ function calcularPorcentagem (valor, percentual){
 
 
 
-function percentualComBaseNoSalario(salarioBruto){
-    if( salarioBruto >= 0 && salarioBruto <= 1100){
+function percentualComBaseNoSalario(salario){
+    if( salario >= 0 && salario <= 1100){
         return 5
-    } else if(salarioBruto >= 1100.01 && salarioBruto <= 2500){
+    } else if(salario >= 1100.01 && salario <= 2500){
         return 10
     }else {
         return 15
     }
 }
 
-   const salarioATransferir = salarioBruto - (calcularPorcentagem(salarioBruto, percentualComBaseNoSalario(salarioBruto)) + ValorAdicionalDoBeneficio)
+    const valorImposto =  (calcularPorcentagem(salario, percentualComBaseNoSalario(salario)))
+
+   const salarioATransferir = salario - valorImposto + ValorAdicionalDoBeneficio;
 
 print(salarioATransferir)
