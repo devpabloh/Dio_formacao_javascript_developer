@@ -29,4 +29,6 @@ function percentualComBaseNoSalario(salarioBruto){
     }
 }
 
-print(percentualComBaseNoSalario(salarioBruto))
+   const salarioATransferir = salarioBruto - (calcularPorcentagem(salarioBruto, percentualComBaseNoSalario(salarioBruto)) + ValorAdicionalDoBeneficio)
+
+print(salarioATransferir)
