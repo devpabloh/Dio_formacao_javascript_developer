@@ -1,4 +1,4 @@
-class carro{
+/* class carro{
     constructor(modelo, ano){
         this.modelo = modelo;
         this.ano = ano;
@@ -10,4 +10,18 @@ class carro{
 }
 
 const fiat = new carro('fiat uno', 2012)
-fiat.descrever()
+fiat.descrever() */
+
+let media = 5
+
+function statusAluno(media){
+    if(media > 5){
+      return ('Reprovadp');
+    }else if(media >= 5 && media < 7){
+      return ('Recuperação');
+    }else{
+      return ('Aprovado');
+    }
+  }
+
+  console.log(statusAluno(media))

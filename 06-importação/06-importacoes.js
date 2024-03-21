@@ -1,6 +1,6 @@
 
 
-const entradas = [2000, 50];
+const entradas = [3,2,1,4];
 
 let i = 0;
 

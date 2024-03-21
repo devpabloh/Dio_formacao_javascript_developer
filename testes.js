@@ -16,23 +16,19 @@ De R$ 2500.01 para cima = 15.00%
 
 const {gets,print} = require("../Dio_formacao_javascript_developer/06-importação/06-importacoes.js")
 
-let salarioBruto = gets()
-const adicional = gets()
+const N = gets();
+let maiorNumeroPar = 0;
+let menorNumeroImpar = 1;
 
-function percentual(salarioBruto){
-    if(salarioBruto >= 0 && salarioBruto <= 1100){
-        return 5
-    } else if(salarioBruto >= 1100.01 && salarioBruto <= 2500){
-        return 10
-    }else{
-        return 15
+for (let i = 0; i < N; i++) {
+  const numero = parseInt(gets());
+
+  if (numero % 2 == 0) {
+    if (numero > maiorNumeroPar) {
+      maiorNumeroPar = numero;
     }
+  }
 }
 
-function ImpostoBase(salarioBruto, percentual){
-
-    return salarioBruto * percentual /100
-
-}
-
-
+print(maiorNumeroPar)
+print(menorNumeroImpar)
