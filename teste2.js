@@ -1,27 +1,16 @@
-/* class carro{
-    constructor(modelo, ano){
-        this.modelo = modelo;
-        this.ano = ano;
-    }
 
-    descrever(){
-        console.log(`esse é o modelo do carro ${this.modelo} e este é o ano do carro ${this.ano}`)
+let salario =2000
+function calcularImposto(salario) {
+    let aliquota;
+    if (salario >= 0 && salario <= 1100) {
+        aliquota = 0.05;
+    }else if(salario >= 1100.01 && salario <= 2500.00){
+      aliquota = 0.10;
+    }else if(salario > 2500.00){
+      aliquota = 0.15;
     }
+    
+    //TODO Criar as demais condições para as aliquotas de 10.00% e 15.00%.
+    return aliquota * salario;
 }
-
-const fiat = new carro('fiat uno', 2012)
-fiat.descrever() */
-
-let media = 5
-
-function statusAluno(media){
-    if(media > 5){
-      return ('Reprovadp');
-    }else if(media >= 5 && media < 7){
-      return ('Recuperação');
-    }else{
-      return ('Aprovado');
-    }
-  }
-
-  console.log(statusAluno(media))
+console.log(calcularImposto(salario))
