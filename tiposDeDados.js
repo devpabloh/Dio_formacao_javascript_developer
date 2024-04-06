@@ -17,7 +17,7 @@ symbol
 
 // quando precisamos fazer contas matemáticas
 
-// importante para entender, quando for utilizar matematica que precise ser precisa
+// importante para entender, quando for utilizar matematica que precise ser precisa temos que recorrer a uma forma mais especifíca
 
 let x = 10;
 x = 'texto';
