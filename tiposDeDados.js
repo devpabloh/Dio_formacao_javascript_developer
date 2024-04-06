@@ -15,6 +15,8 @@ symbol
 
 // doble precision 64-bit binary format IEEE 754
 
+// quando precisamos fazer contas matemáticas
+
 let x = 10;
 x = 'texto';
 
