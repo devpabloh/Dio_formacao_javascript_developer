@@ -11,6 +11,10 @@ symbol
 
 // Object
 
+//+infinity - infinity e NaN
+
+// doble precision 64-bit binary format IEEE 754
+
 let x = 10;
 x = 'texto';
 
