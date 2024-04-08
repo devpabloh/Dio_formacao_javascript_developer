@@ -66,4 +66,12 @@ x2.falar = function() {
 console.log(x2) // retorna o objeto literal completo
 console.log(x2.nome) // usando o nome do objeto.propriedade podemos chamar as propriedades/chave que foram declaradas junto com os valores
 console.log(x2{'nome'}) // da mesma forma da de cima, apenas usamos as chaves e a propriedade/chave dentro das {}
-x2.falar() // para chamar uma função que está dentro do objeto literal
+x2.falar() // para chamar uma função que está dentro do objeto literal  
+
+const x3 = {
+    nome: 'Tais',
+    idade: 22,
+    falar: function(){
+        console.log(`Meu nome é ${this.nome}`) // quando temos uma função dentro de um objeto podemos usar o this. para nos referirmos ao objeto literal e suas propriedades, nesse console.log teremos o retorno de Meu nome é Tais. 
+    }
+}
