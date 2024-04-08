@@ -45,6 +45,25 @@ console.log('<div id="10"> teste </div>') // forma que a convenção prefere que
 console.log(`<div id="${id}"> teste </div>`) // tudo o que estiver dentro do template ${} vai ser tido como concatenação 
  */
 
-const x = symbol('10')
+/* const x = symbol('10')
 
-console.log(x)
+console.log(x) */
+
+// OBJETOS LETERAIS
+
+const x2 = {
+    nome: 'Pablo',
+    idade: 30,
+    nacionalidade: 'Brasileira'
+}
+
+x2.falar = function() {
+    console.log('teste')
+}
+
+
+// podemos chamar alguma informação das seguintes formas
+console.log(x2) // retorna o objeto literal completo
+console.log(x2.nome) // usando o nome do objeto.propriedade podemos chamar as propriedades/chave que foram declaradas junto com os valores
+console.log(x2{'nome'}) // da mesma forma da de cima, apenas usamos as chaves e a propriedade/chave dentro das {}
+x2.falar() // para chamar uma função que está dentro do objeto literal
