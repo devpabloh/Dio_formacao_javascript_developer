@@ -34,3 +34,7 @@ if(nome){
 // FORMAS DE DECLARAR 
 
 // usando aspas duplas "" usando aspas simples '' ou usando a crase ``
+
+// A convenção pede para usar geralmente as '' aspas simples, porque em alguns casos a aspas duplas pode dar problema, fazendo com que tenhamos que colocar / antes a primeira aspas e da última aspas dupla para representar que depois da primeira \ até a última \ o javascript interprete como string e não como caractere especial, vamos ver no exemplo a seguir
+
+console.log("<div id=\"10\"> teste </div>") // como podemos ver tivemos que usar a barra invertida para demonstrar \
