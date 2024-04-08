@@ -41,6 +41,6 @@ if(nome){
 
 console.log('<div id="10"> teste </div>') // forma que a convenção prefere que seja realizado usando aspas simples */
 
-console.log('<div id="'+id+'"> teste </div>')
-console.log(`<div id="${id}"> teste </div>`)
+console.log('<div id="'+id+'"> teste </div>') // tudo o que estiver antes e depois do mais será concatenado
+console.log(`<div id="${id}"> teste </div>`) // tudo o que estiver dentro do template ${} vai ser tido como concatenação 
 
