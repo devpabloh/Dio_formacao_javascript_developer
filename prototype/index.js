@@ -17,7 +17,7 @@ Se a propriedade não for encontrada, o JavaScript percorre a cadeia de protóti
 
 // Lmebrando que objetos são uma coleção dinâmica de chave e valor
 
-const pessoa = {
+/* const pessoa = {
     genero: 'Masculino'
 }
 
@@ -28,4 +28,10 @@ const pablo = {
 }
 
 
-console.log(pablo.genero)
+console.log(pablo.genero) */
+
+// funções contrutoras, começamos usando letra maiusculas no nome da função para indicar que estamos criando uma função construtora
+
+function Pessoa (nome, idade){
+
+}
