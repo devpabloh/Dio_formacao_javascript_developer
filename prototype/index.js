@@ -32,7 +32,7 @@ console.log(pablo.genero) */
 
 // funções contrutoras, começamos usando letra maiusculas no nome da função para indicar que estamos criando uma função construtora
 
-function Pessoa1(nome, idade){
+/* function Pessoa1(nome, idade){
     this.nome = nome
     this.idade = idade
 }
@@ -51,4 +51,26 @@ class pessoa {
         console.log(`Meu nome é: ${this.nome}`)  // lembrando de que quando estamos lidando com função construtora o this se refere sempre a função principal.
     
     }
+} */
+
+/* const pessoa = {
+    idade: 18
 }
+
+const renan = {
+    nome: 'Renan',
+    idade: 30,
+    __proto__: pessoa
+}
+
+console.log(renan.idade) */
+
+const renan = {
+    nome: 'Renan'
+}
+
+renan.__proto__ = {
+    idade: 30
+}
+
+console.log(renan.idade)
