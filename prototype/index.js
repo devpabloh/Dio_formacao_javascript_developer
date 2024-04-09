@@ -49,5 +49,6 @@ class pessoa {
     }
     falar(){
         console.log(`Meu nome é: ${this.nome}`)  // lembrando de que quando estamos lidando com função construtora o this se refere sempre a função principal.
+    
     }
 }
