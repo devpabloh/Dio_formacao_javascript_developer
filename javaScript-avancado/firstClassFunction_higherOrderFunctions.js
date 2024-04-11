@@ -12,13 +12,13 @@ function falarMeuNomeCompleto(){
 
 falarMeuNomeCompleto(falarMeuNome) */
 
-//function declaration
+//function declaration - se executar a function declaration antes da função a mesma vai sofrer um hosting ou içamento, que vai levar ela automaticamente para acima do local que foi executado aquela função
 
 function nomeDaFuncao(){
  console.log('nomeDaFuncao')
 }
 
-// function expression
+// function expression - essa só pode ser executada após declarar a mesma
 
 // a mesma é atribuida a uma variável 
 const nomeDeOutraFuncao = function(){
