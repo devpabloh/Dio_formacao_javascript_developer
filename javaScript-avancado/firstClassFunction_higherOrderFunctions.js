@@ -24,3 +24,6 @@ function nomeDaFuncao(){
 const nomeDeOutraFuncao = function(){
     console.log('nomeDaOutraFuncao')
 }
+
+nomeDaFuncao()
+nomeDeOutraFuncao()
