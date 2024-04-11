@@ -1,7 +1,7 @@
 // First class functions
 // Higher order functions
 
-function falarMeuNome(){
+/* function falarMeuNome(){
     console.log(`Meu nome é Pablo`)
 }
 
@@ -10,4 +10,17 @@ function falarMeuNomeCompleto(){
     console.log(`Henrique Ferreira de França`)
 }
 
-falarMeuNomeCompleto(falarMeuNome)
+falarMeuNomeCompleto(falarMeuNome) */
+
+//function declaration
+
+function nomeDaFuncao(){
+ console.log('nomeDaFuncao')
+}
+
+// function expression
+
+// a mesma é atribuida a uma variável 
+const nomeDeOutraFuncao = function(){
+    console.log('nomeDaOutraFuncao')
+}
