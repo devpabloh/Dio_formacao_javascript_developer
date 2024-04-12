@@ -23,6 +23,8 @@ const listaDeNumerosPares = lista.filter((element)=>{
 
 console.log(listaDeNumerosPares)
 
+// Map - conversão de um objeto em outro
+
 class Pessoa {
     constructor (nome){
         this.name = nome
@@ -31,12 +33,9 @@ class Pessoa {
 
 const lista2 = [new Pessoa('Renan'), new Pessoa('Andressa'), new Pessoa('vitor'), new Pessoa ('Pablo')]
 
-const listaNomes = []
+const listaNomes = lista.map((element) => element.name)
 
-for (let i = 0; i< lista2.length; i++) {
-  const element = lista2[i];
-  listaNomes.push(element.name)
-}
+ // Observação, lembrando que quando estamos usando arrow function não precisamos colocar a função não precisa de um corpo, logo não precusamos usar o return
 
 console.log(listaNomes)
 
