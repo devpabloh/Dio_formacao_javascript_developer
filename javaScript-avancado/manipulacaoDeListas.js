@@ -33,11 +33,19 @@ class Pessoa {
 
 const lista2 = [new Pessoa('Renan'), new Pessoa('Andressa'), new Pessoa('vitor'), new Pessoa ('Pablo')]
 
-const listaNomes = lista.map((element) => element.name)
+const listaNomes = lista2.map((element) => element.name)
 
  // Observação, lembrando que quando estamos usando arrow function não precisamos colocar a função não precisa de um corpo, logo não precusamos usar o return
 
 console.log(listaNomes)
 
+// reduce - reduz a lista a um único valor
+
+const somaDeTodosOsNumeros = lista.reduce((previous, current) =>{
+    return previous + current
+
+}, 0) // nessa parte de baixo podemos passar qual o número inicial para a contagem de vezes, que nesse caso vai iniciar com o 0
+
+console.log(somaDeTodosOsNumeros)
 
 
