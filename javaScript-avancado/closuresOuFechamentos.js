@@ -4,6 +4,8 @@ function soma(x){
     }
 }
 
+const somaparcial = soma(10)
 
-
-console.log(soma(10)(20))
+console.log(somaparcial(20))
+console.log(somaparcial(30))
+console.log(somaparcial(40))
