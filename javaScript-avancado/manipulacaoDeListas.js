@@ -48,4 +48,18 @@ const somaDeTodosOsNumeros = lista.reduce((previous, current) =>{
 
 console.log(somaDeTodosOsNumeros)
 
+// Join - juntar
+
+console.log(lista.join('/')) // adicionou a barra para dividir a lista
+
+// exemplos de uso do que aprendemos
+
+const lista3 = [{nome:'Renan'}, {nome: 'Andressa'}, {nome: 'Vitor'}, {nome:'Amanda'}]
+
+console.log(
+    lista3.map((e)=> e.nome)
+    .filter((e)=> e.startsWith('A'))
+    .join('; ')
+)
+
 
